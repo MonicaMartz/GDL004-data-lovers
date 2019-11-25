@@ -6,86 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body >
     <!--Primer pagina. Introducción a la tematica de la plataforma, con ingreso de nombre de usuario-->
     <header>
       <div id= "pagina1">
-
-      <h1>El mundo mágico <br/>
+        <div class="titlePrincipal">
+        <h1>El mundo Magico<br/>
         de<br/>
          Harry Potter<br/></h1>
-      <p>Hola aprendiz de mago ven y conoce este fantastico mundo, lleno de mágia y aventuras</p>
-      <p>Soy Hedwig, y yo te compañaré a dar tus primeros vuelos en este increible mundo<br/>
+         <img src="img/harrylogo.png" class="harrilogo"width="100px"height="100px">
+    </div>
+      <h2 class="saludoPag1">Hola aprendiz de mago ven y conoce este fantastico mundo, lleno de mágia y aventuras</h2>
+       <p class="HedwigPresentacion">Soy Hedwig, y yo te compañaré a dar tus primeros vuelos en este increible mundo<br/>
         mmmm pero antes de entrar dime,<br/>
          ¿Cuál es tu nombre?</br>
-      </p>
-
-      <input type="text" id="name" placeholder= "Aquí su nombre joven mago">
-      <p>Da click en el hechizo y comencemos a explorar</p>
-      <input type="submit" id="boton" type="button" class="button" value="Alohomora">
+       <input type="text"class="inputName" id="name" required minlength="3" maxlength="20"  placeholder= "Aquí su nombre joven mago"/>
+       <p class="HedwigInstruccion">Da click en el hechizo y comencemos a explorar  <button id="boton" class="buttonAlohomora">alohomora</button></p>--
       </div>
       </header>
 
       <!--pagina 2 con el menú de mavegacion-->
       <section>
       <div id="pagina2">
-      <h2>Bienvenido</h2>
-      <p id="user"></p>
-      <p>En el mundo mágico cualquier cosa puede ocurrir, gracias al poder de la mágia</p>
-      <input type="submit" id="HogwartsyCasas" type="button" class="button" value="Hogwarts y sus Casas">
-      <input type="submit" id="Patronus" type="button" class="button" value="Patronus">
-      <input type="submit" id="RegistrodeNacimientos" type="button" class="button" value="Registro de Nacimientos">
-      <input type="submit" id="VaritasMagicas" type="button" class="button" value="Varitas Magicas">
-      <input type="submit" id="MásdeHarry" type="button" class="button" value="Más de Harry">
-      <input type="submit" id="DatosCuriosos" type="button" class="button" value="Datos Curiosos">
-      </section>
+       <p id="user" class="saludopag2"></p>
+       <p class="hedwigPag2">En el mundo mágico cualquier cosa puede ocurrir, gracias al poder de la mágia</p>
+       <article ><img src="img/4casas.jpeg" id="HogwartsyCasas"  class="logo" alt="Horelativegwarts y sus Casas" height="200px"width="200px">
+        <h3 class="hogwarts">Casas de hogwats</h3>
+       </article>
+       <article><img src="img/patronus.jpg"id="patronus" class="logo1" alt="patronus" height="200px"width="200px">
+        <h3 class="patronum">Expecto Patronum </h3>
+       </article>
+       <article><img src="img/varitas.jpg" id="varitas" class="logo2" alt="varitas" height="200px"width="200px">
+        <h3 class="varitas">Varitas magicas</h3>
+       </article>
+       <article><img src="img/images.jpeg" id="HogwartsyCasas"  class="logo3" alt="Hogwarts y sus Casas" height="200px"width="200px">
+        <h3 class="sangre">Tipo de sangre</h3>
+       </article>
+       <article> <img src="img/hagrit.jpg" id="HogwartsyCasas"  class="logo4" alt="Hogwarts y sus Casas" height="200px"width="200px">
+         <h3 class="maestros">Maestros</h3>
+       </article>
+       </section>
+
       <!--pagina 3 con la historia de hogwats y las casas-->
       <div id="pagina3">
-      <h2>Hogwarts</h2>
-      <article>
-      <p> Existen 11 escuelas mágicas que son las encargadas de educar a los jovenes magos del planeta,
-         estas escuelas están en ubicaciones secretas para ocultarse de los muggles</p>
-      <p>Una de estas escuelas es la prestigiosa Hogwarts fue fundada hace más de mil años por cuatro poderosos magos: <br/>
-        Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw y Helga Hufflepuff.<br/>
-         Eligieron dividir a los estudiantes en cuatro 'casas', cada una con sus apellidos y presentando jóvenes magos y brujas que mostraban habilidades y personalidades distintas.<br/>
+      <h2 class="titlepag3">Hogwarts</h2>
+       <article class="textoPag3">
+        <p> Existen 11 escuelas mágicas que son las encargadas de educar a los jovenes magos del planeta,
+         estas escuelas están en ubicaciones secretas para ocultarse de los muggles.
+         Una de estas escuelas es la prestigiosa Hogwarts fue fundada hace más de mil años por cuatro poderosos magos: 
+         Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw y Helga Hufflepuff.
+         Eligieron dividir a los estudiantes en cuatro 'casas', cada una con sus apellidos y presentando jóvenes magos y brujas que mostraban habilidades y personalidades distintas.</p>
 
 
-      <p>Para hacer esto, Godric Gryffindor usó su sombrero mágico, en adelante conocido como el Sombrero Seleccionador, para decidir qué niños irían a qué casa, <br/>
+       <p>Para hacer esto, Godric Gryffindor usó su sombrero mágico, en adelante conocido como el Sombrero Seleccionador, para decidir qué niños irían a qué casa, <br/>
         y así ha sido desde entonces con una Ceremonia de Clasificación anual que coloca a cada nuevo alumno en su propio hogar.<br/>
         Las cuatro casas tienen diferentes requisitos de entrada, y el viejo Sombrero Seleccionador las resumió en su canción de bienvenida ...</p>
       </article>
 
-      <h3>Quieres saber que personajes pertenecian a esas casas y que los caracterizaba?</h3>
+      <h3 class="hedwigPag3">Quieres saber que personajes pertenecian a esas casas y que los caracterizaba?</h3>
       <!--<main>-->
 
       <section>
-      <input type="submit" id="botonGrif" type="button" class="button" value="Gryffindor">
-      <article id= "Griffindor">Gryffindor</article>
-      <p>"Podrías pertenecer a Gryffindor,<br/>
+      <img src="img/gryffindor-harry-potter 2.png" id="botonGrif"  class="imgG" width="100px" height="100px">
+      <article id= "articleGriffindor">Gryffindor</article>
+       <p>"Podrías pertenecer a Gryffindor,<br/>
         donde habitan los valientes de corazón,<br/>
         su osadía, nervios y caballería<br/>
         distinguen a Gryffindors".</p>
       <article id= "PersonGriffindor"></article>
 
-      <input type="submit" id="botonHuff" type="button" class="button" value="Hufflepuff">
-      <article id= "Hufflepuff">Hufflepuff</article>
+      <img src="img/hufflepuff-harry-potter 2.png" id="botonHuff"  class="imgH" width="100px" height="100px" >
+      <article id= "articleHufflepuff">Hufflepuff</article>
       <p>"Podrías pertenecer a Hufflepuff,<br/>
           donde son justos y leales.<br/>
           Esos pacientes Hufflepuff son verdaderos<br/>
           y no temen el trabajo"</br>
       <article id= "PersonHufflepuff"></article>
 
-      <input type="submit" id="botonRave" type="button" class="button" value="Ravenclaw">
-      <article id= "Ravenclaw">Ravenclaw</article>
+      <img src="img/ravenclaw-harry-potter 2.png" id="botonRave" class="imgR"  width="100px" height="100px"  >
+      <article id= "articleRavenclaw">Ravenclaw</article>
       <p>O, sin embargo, en el viejo y sabio Ravenclaw,<br/>
         si tienes una mente preparada,<br/>
         donde aquellos con ingenio y aprendizaje<br/>
         siempre encontrarán su especie".<br/>
         <article id= "PersonRavenclaw"></article>
 
-      <input type="submit" id="botonSlyt" type="button" class="button" value="Slytherin">
-      <article id= "Slytherin">Slytherin</article>
+      <img src="img/slytherin-harry-potter 2.png" id="botonSlyt"  class="imgS" width="100px" height="100px" >
+      <article id= "articleSlytherin">Slytherin</article>
       <p>"O tal vez en Slytherin<br/>
         harás tus verdaderos amigos.<br/>
         Esa gente astuta usa cualquier medio<br/>

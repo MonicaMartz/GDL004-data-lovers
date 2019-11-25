@@ -14,6 +14,7 @@ export const filterHouse = (POTTER) =>{
   return house;
 }
 
+
 /*export const filterHouse = (POTTER) =>{
   const house = POTTER.filter(personage => (personage.house === "Gryffindor"));
 
