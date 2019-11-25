@@ -33,6 +33,7 @@ const personajesGriffindor = filterGryffindor(POTTER)
 }
 document.getElementById("botonGrif").addEventListener("click",filtradoHouseG);
 */
+f
 
 /*FILTRO CASA HUFFLEPUFF*/
 function  filtradoHouseH(){
