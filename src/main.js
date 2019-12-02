@@ -18,7 +18,7 @@ function conditional() {
       welcomeUser(); filterHufflepuff
     }
      else{
-         alert("escribe tu nombre");
+         alert("Escribe tu nombre");
      }
 };
    /* OCULTAR PAG2 MOSTRAR PAG3*/
@@ -27,14 +27,13 @@ function conditional() {
        document.getElementById("pagina3").style.display = "block";
        document.getElementById("pagina2").style.display = "none";
    };
-/*MUESTRA PAG2 OCULTA PAG3 Y PAG1*/
+/*MUESTRA PAG2 OCULTA PAG3 */
 document.getElementById("boton_pag3").addEventListener("click",retornarpag3);
 function retornarpag3(){
-   
     document.getElementById("pagina2").style.display = "block";
     document.getElementById("pagina3").style.display = "none";
-    
 };
+/*AGREGAR EVENTO A LOS BOTONES*/
 document.getElementById("botonGryf").addEventListener("click",ejecutarGryffindor);
 document.getElementById("botonHuff").addEventListener("click",ejecutarHufflepuff);
 document.getElementById("botonRave").addEventListener("click",ejecutarRavenclaw);
@@ -42,18 +41,23 @@ document.getElementById("botonSlyt").addEventListener("click",ejecutarSlytherin)
 
 /*MUESTRA LOS NOMBRES E IMAGEN RESULTADO DEL FILTRO DE GRYFFINDOR*/
 function ejecutarGryffindor(){
-  
+    document.getElementById("botonGryf").removeEventListener("click",ejecutarGryffindor);
+
   const personagesGryffindor = filterGryffindor(POTTER)
   personagesGryffindor.map((personage) =>{
   let tempG = document.createElement("span");
   const template = `<div class ="element_name"> ${personage.name}</div>
-  <img class="img_potter" src=${personage.image}></div>`
+    <img class="img_potter" src=${personage.image}></div>`
+    console.log("personagesGryffindor");
   tempG.innerHTML = template;
   document.getElementById("PersonGryffindor").appendChild(tempG);
+
 })};
 
 /*FILTRO CASA HUFFLEPUFF*/
-function ejecutarHufflepuff(){const personagesHufflepuff = filterHufflepuff(POTTER)
+function ejecutarHufflepuff(){
+    document.getElementById("botonHuff").removeEventListener("click",ejecutarHufflepuff);
+    const personagesHufflepuff = filterHufflepuff(POTTER)
     personagesHufflepuff.map((personage) =>{
      let tempH = document.createElement("span");
      const template = `<div class ="element_nameH"> ${personage.name}</div>
@@ -63,7 +67,9 @@ function ejecutarHufflepuff(){const personagesHufflepuff = filterHufflepuff(POTT
    })};
    
 /*FILTRO CASA RAVENCLAW*/
-function ejecutarRavenclaw(){const personagesRavenclaw = filterRavenclaw(POTTER)
+function ejecutarRavenclaw(){
+    document.getElementById("botonRave").removeEventListener("click",ejecutarRavenclaw);
+    const personagesRavenclaw = filterRavenclaw(POTTER)
     personagesRavenclaw.map((personage) =>{
      let tempR = document.createElement("span");
      const template = `<div class ="element_nameR"> ${personage.name}</div>
@@ -74,7 +80,9 @@ function ejecutarRavenclaw(){const personagesRavenclaw = filterRavenclaw(POTTER)
 
 
 /*FILTRO CASA SLYTERIN*/
-function ejecutarSlytherin(){const personagesSlytherin = filterSlytherin(POTTER)
+function ejecutarSlytherin(){
+    document.getElementById("botonSlyt").removeEventListener("click",ejecutarSlytherin);
+    const personagesSlytherin = filterSlytherin(POTTER)
     personagesSlytherin.map((personage) =>{
      let tempS = document.createElement("span");
      const template = `<div class ="element_nameS"> ${personage.name}</div>
@@ -83,3 +91,33 @@ function ejecutarSlytherin(){const personagesSlytherin = filterSlytherin(POTTER)
      document.getElementById("PersonSlytherin").appendChild(tempS);
    })};
 
+/*function addEventClick(){
+
+    const card = document.querySelectorAll(".img_potter");
+    card.forEach(element =>
+     element.addEventListener("click",function(){
+         const characterId = event.currentTarget.id;
+         const infohp = (POTTER).filter(infoEachOne=>infoEachOne.name=== characterId);
+         infohp.forEach(function(hpData){
+             const cardInfo=
+             `<img class="hp.image" src ="${hpData.name}"/>
+             <p class="info">${hpData.house}</p>
+             <p class="info">${hpData.actor}</p>`
+             ;
+             modal.innerHTML+= cardInfo;
+         });
+         console.log(infohp);
+         showModal()
+            
+
+     }) )
+}
+function showModal(){
+    $overlay.classList.add("active");
+    $modal.classList.add("modal");
+
+}
+hide_modal_btn.addEventListener("click",event=>{
+    $overlay.classList.remove("active");
+    $modal.classList.remove("modal");
+})*/

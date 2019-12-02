@@ -3,8 +3,7 @@
 /*FILTRO POR CASA.*/
 export const filterGryffindor = (POTTER => {
   const gryffindor = POTTER.filter(personage =>(personage.house === "Gryffindor"));
-  /*const namegryffindor = gryffindor.map(personage =>(personage.name)+" "+(personage.image));*/
-    return gryffindor;
+      return gryffindor;
 });
 export const filterHufflepuff= (POTTER => {
   const hufflepuff= POTTER.filter(personage =>(personage.house === "Hufflepuff"));
