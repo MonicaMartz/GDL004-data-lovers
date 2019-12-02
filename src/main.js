@@ -22,7 +22,7 @@ function conditional() {
      }
 };
    /* OCULTAR PAG2 MOSTRAR PAG3*/
-   document.getElementById("pepecho").addEventListener("click",mostrarPag3);
+   document.getElementById("HogwartsyCasas").addEventListener("click",mostrarPag3);
    function mostrarPag3(){
        document.getElementById("pagina3").style.display = "block";
        document.getElementById("pagina2").style.display = "none";

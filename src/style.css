@@ -210,27 +210,22 @@ button:hover{
   left:400px;
   top: 5px;*/
 }
-#pagina3 {
-  height: 1500px;
-  width: 1280px;
-  background-image: url("img/comedor1.jpg");
-  background-repeat: no-repeat;
-  background-size: 1500px;
-  display: none;
-  flex-wrap: wrap;
-}
 
-/*PAG3*/
+
 #pagina3 {
+  background-image: url("img/fondo.gif");
+  background-repeat: repeat;
   width: 100%;
+  display:none;
   display: flex;
   flex-direction:column;
   align-content: center;
   flex-wrap: wrap;
-  background-image: url("img/fondoPag3.gif");
  	margin:0%;
-  display:none;
+    display:none;
 }
+
+/*PAG3*/
 
 .contenedorTitle{
   width: 80%;
@@ -422,7 +417,7 @@ button:hover{
 	padding: 20px;
   text-align: center;
   color: aliceblue;
-} 
+}
 .span_slytherin{
   display: flex;
 	flex-wrap: wrap;
