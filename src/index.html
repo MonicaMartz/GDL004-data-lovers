@@ -10,44 +10,59 @@
   </head>
   <body >
     <!--Primer pagina. Introducción a la tematica de la plataforma, con ingreso de nombre de usuario-->
-    <header>
       <div id= "pagina1">
-        <div class="titlePrincipal">
-        <h1>El mundo Magico<br/>
-        de<br/>
-         Harry Potter<br/></h1>
-         <img src="img/harrylogo.png" class="harrilogo"width="100px"height="100px">
-    </div>
-      <h2 class="saludoPag1">Hola aprendiz de mago ven y conoce este fantastico mundo, lleno de mágia y aventuras</h2>
-       <p class="HedwigPresentacion">Soy Hedwig, y yo te compañaré a dar tus primeros vuelos en este increible mundo<br/>
-        mmmm pero antes de entrar dime,<br/>
-         ¿Cuál es tu nombre?</br>
-       <input type="text"class="inputName" id="name" required minlength="3" maxlength="20"  placeholder= "Aquí su nombre joven mago"/>
-       <p class="HedwigInstruccion">Da click en el hechizo y comencemos a explorar  <button id="boton" class="buttonAlohomora">alohomora</button></p>--
-      </div>
+      <header>
+        <h1 id="titlePrincipal">El mundo Magico de<br/>
+        Harry Potter<br/>
+      </h1>
+         <img src="img/harrylogo.png" class="harrilogo">
       </header>
-
+      <div id="saludoPag1">
+      <h2>Entra y conoce este fantastico mundo, lleno de mágia y aventuras</h2>
+      </div>
+      <div id="snich">
+      <img src="img/snichs.png" class="snich">
+      </div>
+      <section id="HedwigPresentacion">
+       <p id="texto">La snich dorada y yo te compañaré a dar tus primeros vuelos en este increible mundo<br/>
+      Pero antes de entrar joven mago, dime,<br/>
+         ¿Cuál es tu nombre?</br></p>
+    <input type="text"class="inputName" id="name" required minlength="3" maxlength="20"  placeholder= "Aquí su nombre joven mago"/>
+    </section>
+      <div id="alohomora">
+        <p class="HedwigInstruccion">Da click en el hechizo y comencemos a explorar</p>
+        <button id="boton" class="buttonAlohomora">alohomora</button>
+      </div>
+      </div>
       <!--pagina 2 con el menú de mavegacion-->
-      <section>
-      <div id="pagina2">
-       <p id="user" class="saludopag2"></p>
-       <p class="hedwigPag2">En el mundo mágico cualquier cosa puede ocurrir, gracias al poder de la mágia</p>
-       <article ><img src="img/4casas.jpeg" id="HogwartsyCasas"  class="logo" alt="Horelativegwarts y sus Casas" height="200px"width="200px">
-        <h3 class="hogwarts">Casas de hogwats</h3>
-       </article>
-       <article><img src="img/patronus.jpg"id="patronus" class="logo1" alt="patronus" height="200px"width="200px">
-        <h3 class="patronum">Expecto Patronum </h3>
-       </article>
-       <article><img src="img/varitas.jpg" id="varitas" class="logo2" alt="varitas" height="200px"width="200px">
-        <h3 class="varitas">Varitas magicas</h3>
-       </article>
-       <article><img src="img/images.jpeg" id="HogwartsyCasas"  class="logo3" alt="Hogwarts y sus Casas" height="200px"width="200px">
-        <h3 class="sangre">Tipo de sangre</h3>
-       </article>
-       <article> <img src="img/hagrit.jpg" id="HogwartsyCasas"  class="logo4" alt="Hogwarts y sus Casas" height="200px"width="200px">
-         <h3 class="maestros">Maestros</h3>
-       </article>
-       </section>
+      <section id="pagina2">
+        <div id="contenedor">
+        <h1 id="user" class="saludopag2"></h1>
+        <p class="hedwigPag2">En el mundo mágico cualquier cosa puede ocurrir cualquier cosa, gracias al poder de la mágia</p>
+
+          <div id="menu">
+              <article ><img src="img/Logohogrs.png" id="HogwartsyCasas"  class="logo" alt="Horelativegwarts y sus Casas">
+                  <h3 class="hogwarts">Casas de hogwats</h3>
+                  </article>
+
+                  <article><img src="img/crop.jpg"id="patronus" class="logo" alt="patronus">
+                  <h3 class="patronum">Patronum</h3>
+                  </article>
+
+                  <article><img src="img/varitass.jpg" id="varitas" class="logo" alt="varitas">
+                  <h3 class="varitas2">Varitas magicas</h3>
+                  </article>
+
+                  <article><img src="img/linaje1.jpg" id="linaje"  class="logo" alt="Hogwarts y sus Casas">
+                  <h3 class="sangre">Tipo de sangre</h3>
+                  </article>
+
+                  <article> <img src="img/maestros.jpg" id="magosmaster"  class="logo" alt="Hogwarts y maestros">
+                  <h3 class="maestros">Maestros</h3>
+                  </article>
+                </div>
+            </div>
+      </section>
 
       <!--pagina 3 con la historia de hogwats y las casas-->
       <div id="pagina3">
@@ -55,7 +70,7 @@
        <article class="textoPag3">
         <p> Existen 11 escuelas mágicas que son las encargadas de educar a los jovenes magos del planeta,
          estas escuelas están en ubicaciones secretas para ocultarse de los muggles.
-         Una de estas escuelas es la prestigiosa Hogwarts fue fundada hace más de mil años por cuatro poderosos magos: 
+         Una de estas escuelas es la prestigiosa Hogwarts fue fundada hace más de mil años por cuatro poderosos magos:
          Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw y Helga Hufflepuff.
          Eligieron dividir a los estudiantes en cuatro 'casas', cada una con sus apellidos y presentando jóvenes magos y brujas que mostraban habilidades y personalidades distintas.</p>
 
